@@ -96,10 +96,13 @@ margin-right: 30px;
     align-items: center;}
 
 .icon {
+  
   width: 16px; 
-  height: 12px; 
+  height: 16px; 
   margin-right: 10px;
 }
+
+
 .contacts .item:hover,
 .contacts .item:focus {
     fill: var(--accent-color);   
@@ -255,7 +258,7 @@ background-image: url(../images/diagram-1.svg);
 background-image: url(../images/astronaut-1.svg);
 }
 .title   {
-margin-top: 0; 
+
 margin-top: 30px;
 margin-bottom: 10px;
 color:var(--title-text-color);
@@ -324,6 +327,24 @@ font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 }
+
+.social-links {
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    width: 206px;
+    height: 44px;
+display: flex;
+}
+.social-icon {
+ 
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px;
+
+}
+.social-icon:not(:last-child) {
+    margin-right: 10px}
 .client {
 width: 170px;
 height: 92px;
@@ -349,7 +370,8 @@ padding-bottom: 60px;
 }
 
 .post-address, .address .contact {
-color: #FFFFFF ;
+margin-right: 0;
+    color: #FFFFFF ;
 font-family: 'Roboto';
 font-style: normal;
 font-size: 14px;
@@ -358,7 +380,9 @@ letter-spacing: 0.03em;
 
 }
 .address {
-margin-top: 20px;
+    margin-top: 20px;
+width: 231px;
+height: 81px;
 }
 
 .contact {
@@ -372,6 +396,30 @@ color: rgba(255, 255, 255, 0.6);
 .address .contact:hover,
 .address .contact:focus {
 color: var(--accent-color);  
+}
+
+.socials {
+    margin-left: 516px;
+    margin-right: 878px;
+    margin-top: 72px;
+    margin-bottom: 100px;
+width: 206px;
+height: 80px;
+
+}
+
+.caption {
+   margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color:var(--primaty-white-color);
+      
+}
+.link-list {
+    display: flex;
 }
 
 
