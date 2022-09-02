@@ -17,27 +17,25 @@
                 </a>
                 <nav>
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link">Студія</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link  current">Портфоліо</a></li>
+                    <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
                     <li class="item"><a href="" class="link" >Контакти</a></li>
                 </ul>
             </nav>
             <ul class="contacts list">
                 <li class="item">
-                    
-                       <svg class="icon"> 
+                    <a class="link" href="#" aria-label="mail">
+                        <svg class="icon" width="16" height="12"> 
                         <use href="./images/symbol-defs.svg#icon-icon-mail-1"></use>
-                       </svg> 
-                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-               
-                    <li class="item">
-                    
-                        <svg class="icon"> 
+                        </svg> 
+                        info@devstudio.com</a></li>
+                <li class="item"> 
+                    <a class="link" href="#" aria-label="telephone">
+                        <svg class="icon" width="10" height="16"> 
                          <use href="./images/symbol-defs.svg#icon-icon-smartphone-1"></use>
                         </svg> 
-                        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-                
-                </ul>
+                        +38 096 111 11 11</a></li>
+                    </ul>
         </div>
         </header>
         <!--Контент сторінки портфоліо-->
@@ -164,10 +162,12 @@
         </main>
         <!--футер-->
         <footer class="footer">
-            <div class="container">
+            <div class="container footer-content-info">
+                <div class="logo-address">
                 <a href="/" class="logo decoration ">
                    <span class="logo-one">Web</span><span class="logo-three">Studio</span>
                 </a>
+               
                 <address>
                     <ul class="address list">
                     <li><a href="/" class="post-address decoration">м. Київ, пр-т Лесі Українки, 26</a></li>
@@ -175,6 +175,37 @@
                     <li class="contact"><a href="tel:+38096111111" class="contact decoration">+38 096 111 11 11</a></li>
                 </ul>
                 </address>
+            </div>
+                <div class="socials">
+                    <h3 class="caption">приєднуйтесь</h3>
+                    <ul class="link-list list">
+                        <li>
+                            <a class="link-svg-footer" href="#" aria-label="Instagram">
+                            <svg class="icon-socials" width="20" height="20"> 
+                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                               </svg></a>
+                        </li>
+                        <li>
+                            <a class="link-svg-footer" href="#" aria-label="Instagram">
+                            <svg class="icon-socials" width="20" height="20"> 
+                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                               </svg></a>
+                        </li>
+                        <li>
+                            <a class="link-svg-footer" href="#" aria-label="Instagram">
+                            <svg class="icon-socials" width="20" height="20"> 
+                                <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                               </svg></a>
+                        </li>
+                        <li>
+                            <a class="link-svg-footer" href="#" aria-label="Instagram">
+                            <svg class="icon-socials" width="20" height="20"> 
+                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                               </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             </div>
         </footer>
     </body>
