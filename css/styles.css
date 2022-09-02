@@ -3,6 +3,7 @@
     --title-text-color: #212121;
 --primaty-white-color: #FFFFFF;
     --accent-color: #2196F3;
+    --icon-color: #afb1b8;
 }
 
 .page {  
@@ -74,7 +75,7 @@ display: flex;
 margin-right: 50px;
 }
 
-.site-nav .link, .contacts .link .icon {
+.site-nav .link, .contacts .link {
 color:var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -92,6 +93,7 @@ justify-content: flex-end;
 .contacts .item:not(:last-child) {
 margin-right: 30px;
 }
+
 .item {
     align-items: center;}
 
@@ -234,15 +236,15 @@ width: 270px;
 .priority-item:not(:last-child) {
 margin-right: 30px;
 }
- .priority-item::before {
-    content:  "";
-    display: block;
+
+.upper {
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
     height: 120px;
-    background-image: url(../images/antenna-1.svg);
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color:  #F5F4FA;
+    justify-content:center ;
+    align-items: center;   
+   
  }
 
  .icon-intime::before {
@@ -332,19 +334,32 @@ letter-spacing: 0.03em;
     width: 206px;
     height: 44px;
 display: flex;
-}
-.social-icon {
- 
-    width: 44px;
-    height: 44px;
-    padding: 12px 12px;
+gap: 10px;
+align-items: center;
 
 }
-.social-icon:not(:last-child) {
-    margin-right: 10px}
+
+.link-svg {   
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+border-radius: 50%;
+background-color: transparent;
+color:var(--icon-color) ;
+}
+.icon-socials {
+    fill:var(--icon-color);
+ }
+.link-svg:hover,
+.link-svg:focus {
+    background-color:var(--accent-color); 
+    color: #fff;
+}
 .client {
-width: 170px;
-height: 92px;
+    width: 170px;
+    height: 92px;
 padding: 16px 32px ;
 border: 1px solid #AFB1B8 ;
 border-radius: 4px;}
@@ -352,14 +367,41 @@ border-radius: 4px;}
 .client:not(:last-child) {
     margin-right: 30px;
 }
+.client-site {  
+    width: 106px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
 .client-icon {
-    
+    fill:#AFB1B8 ;
+   
+}
+.client-icon:hover {
+    fill: var(--accent-color);
+}
+.client:hover,
+.client:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color); 
 }
 
+
 /* footer */
+
 .footer {
 padding-top: 60px;
 padding-bottom: 60px;
+
+}
+
+.footer-content-info {
+    display: flex;
+}
+
+.logo-address {
+    display: block;
 }
 
 .post-address, .address .contact {
@@ -373,6 +415,9 @@ letter-spacing: 0.03em;
 
 }
 .address {
+
+    margin-right: 0;
+    margin-bottom: 0;
     margin-top: 20px;
 width: 231px;
 height: 81px;
@@ -392,16 +437,18 @@ color: var(--accent-color);
 }
 
 .socials {
-    margin-left: 516px;
-    margin-right: 878px;
-    margin-top: 72px;
-    margin-bottom: 100px;
+    margin-top: 12px;
+    margin-left:70px;
+    margin-right: 0;
+    margin-top: px;
+ 
 width: 206px;
 height: 80px;
 
 }
 
 .caption {
+    margin-top: 0;
    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
