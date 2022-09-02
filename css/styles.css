@@ -336,7 +336,7 @@ letter-spacing: 0.03em;
 display: flex;
 gap: 10px;
 align-items: center;
-
+color:var(--icon-color) ;
 }
 
 .link-svg {   
@@ -350,7 +350,7 @@ background-color: transparent;
 color:var(--icon-color) ;
 }
 .icon-socials {
-    fill:var(--icon-color);
+    fill:currentColor;
  }
 .link-svg:hover,
 .link-svg:focus {
