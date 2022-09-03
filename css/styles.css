@@ -99,6 +99,7 @@ margin-right: 30px;
 
 .icon {
       margin-right: 10px;
+      fill: #757575;
 }
 
 
@@ -131,8 +132,8 @@ color: var(--accent-color);
 }
 
 .hero {
-background: linear-gradient(#00000033, #2F303A66);  
 background-image: 
+linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
  url(../images/hero-img.jpg);
 max-width: 1600px;
 height: 600px;
@@ -250,14 +251,8 @@ margin-right: 30px;
    
  }
 
- .icon-intime::before {
-background-image: url(../images/clock-1.svg);
- }
-.icon-planning::before {
-background-image: url(../images/diagram-1.svg);
-}
-.icon-approach::before {
-background-image: url(../images/astronaut-1.svg);
+.priority-icon {
+    fill: var(--title-text-color);
 }
 .title   {
 
