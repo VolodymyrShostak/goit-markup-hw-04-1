@@ -1,9 +1,10 @@
 :root {
     --primary-text-color: #2F303A;
     --title-text-color: #212121;
---primaty-white-color: #FFFFFF;
+    --primaty-white-color: #FFFFFF;
     --accent-color: #2196F3;
     --icon-color: #afb1b8;
+    --primary-bacground-color:#F5F4FA;
 }
 
 .page {  
@@ -19,6 +20,7 @@ padding-top: 24px;
 padding-bottom: 24px;
 border-bottom:1px solid #ECECEC;
 }
+
 .decoration {
 text-decoration: none;
 }
@@ -71,11 +73,11 @@ margin-left: 93px;
 display: flex;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav .item-chapter:not(:last-child) {
 margin-right: 50px;
 }
 
-.site-nav .link, .contacts .link {
+.site-nav .link-chapter, .contacts .link-contact {
 color:var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -90,46 +92,31 @@ display: flex;
 justify-content: flex-end;
 }
 
-.contacts .item:not(:last-child) {
+.contacts .item-contact:not(:last-child) {
 margin-right: 30px;
 }
 
-.item {
+.item-contact {
     align-items: center;}
 
-.icon {
+.icon-contact {
       margin-right: 10px;
     
 }
-
-
-.contacts .link:hover,
-.contacts .link:focus {
-    fill: var(--accent-color);   
-}
-
-.contacts .link {
+.contacts .link-contact {
 color: #757575 ;
  }
 
-.site-nav .link:hover,
-.site-nav .link:focus 
-{
-color: var(--accent-color);
+.site-nav .link-chapter.current,
+.contacts .link-contact.current,
+.site-nav .link-chapter:hover,
+.site-nav .link-chapter:focus, 
+.contacts .link-contact:hover,
+.contacts .link-contact:focus {
+    fill: var(--accent-color); 
+    color: var(--accent-color);  
 }
-
-.site-nav .link.current {
-color: var(--accent-color);
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
-color: var(--accent-color);
-}
-
-.contacts .link.current {
-color: var(--accent-color);
-}
+ 
 
 .hero {
 background-image: 
@@ -242,7 +229,7 @@ margin-right: 30px;
 }
 
 .upper {
-    background: #F5F4FA;
+    background: var(--primary-bacground-color);
     border-radius: 4px;
     display: flex;
     height: 120px;
@@ -285,7 +272,7 @@ margin-right: 30px;
 }
 
 .shadow {
-background: #F5F4FA;
+background: var(--primary-bacground-color);
 padding-bottom: 94px;
 }
 
@@ -382,7 +369,7 @@ color:var(--icon-color) ;
 .client-site:hover,
 .client-site:focus {
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color); 
+  border-color: var(--accent-color); 
 }
 
 .link-list {
